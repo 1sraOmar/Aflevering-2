@@ -1,0 +1,22 @@
+d3.select("#content") // Vælg tbody-elementet
+  .selectAll("tr") // Vælg alle tr-elemener (der er ingen tr'er nu, men vi binder data til dem)
+  .data(albums) // Bind albumdata til tr-elementerne
+  .enter() // Skab tr-elementer for hvert album
+  .append("tr") // Tilføj en tr for hvert album
+  .each(function(d) { // For hvert album (data)
+    d3.select(this) // Vælg det nuværende tr-element
+      .append("td") // Tilføj en td for albumName
+      .text(d.albumName);
+
+    d3.select(this) // Vælg det samme tr-element
+      .append("td") // Tilføj en td for artistName
+      .text(d.artistName);
+
+    d3.select(this) // Vælg det samme tr-element
+      .append("td") // Tilføj en td for productionYear
+      .text(d.productionYear);
+
+    d3.select(this) // Vælg det samme tr-element
+      .append("td") // Tilføj en td for rating
+      .text(d.rating);
+  });

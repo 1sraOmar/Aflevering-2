@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+table {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+
+  td {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+    background-color: rgb(109, 138, 181);
+  }
+
+  th {
+    border: 1px solid #070105;
+    text-align: left;
+    padding: 8px;
+    background-color: rgb(205, 214, 212);
+  }
+
+  .special {
+    font-style: italic;
+
+  }
+
+  
